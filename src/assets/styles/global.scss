@@ -1,0 +1,11 @@
+$theme-colors: (
+  'primary': #7aadf9,
+  'secondary': #cdfadc
+);
+
+@import './../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+}
