@@ -1,12 +1,12 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 export default {}
 </script>
 
 <template>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand logo" to="/">NOTES</RouterLink>
+      <a class="navbar-brand logo" href="/">NOTES</a>
 
       <button
         class="navbar-toggler"
@@ -21,12 +21,11 @@ export default {}
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <RouterLink class="btn btn-primary login" to="/login">Login</RouterLink>
+          <a class="btn btn-primary login" href="/login">Login</a>
         </div>
       </div>
     </div>
   </nav>
-  <RouterView />
 </template>
 
 <style lang="scss" scoped>
