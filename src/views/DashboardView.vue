@@ -1,11 +1,42 @@
-<script setup></script>
+<script setup>
+import NavbarDashboard from '../components/NavbarDashboard.vue';
+import CardItem from '../components/CardItem.vue';
+import ModalCard from '../components/ModalCard.vue';
+
+</script>
 
 <template>
+  <NavbarDashboard  />
   <main class="notes">
-    <div>
-      <h1 class="logo fs-1">this is the notes page</h1>
-      <p>Notes is free note taking application...</p>
+    <div class="d-flex justify-content-between">
+      <div>
+        <h1 class="logo fs-1 ">Hey, <span>Test</span></h1>
+      </div>
+      <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add New
+        <ModalCard/>
+      </button>
     </div>
+    <section class="pt-4 d-flex justify-content-evenly flex-wrap gap-4">
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+      <CardItem/>
+    </section>
   </main>
 </template>
 
@@ -24,5 +55,15 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+.logo{
+  color: $primary;
+  padding-top: 15px;
+}
+span{
+  color: black;
+}
+button{
+  margin: 15px 0 ;
 }
 </style>
