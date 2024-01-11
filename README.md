@@ -1,4 +1,4 @@
-# notes_app
+# Notes App with Vue
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -33,8 +33,7 @@ npm run build
 ```sh
 npm run lint
 ```
-# notes_app
-# notes_app
-# notes_app
-# notes
-# notes
+# Notes App with Vue
+
+#With Login And Sign Up Pages
+
