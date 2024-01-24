@@ -1,11 +1,11 @@
 <template>
-  <div v-for="note in data" key="data.id">
+  <div v-for="note in data" :key="data.id">
     <!-- Button trigger modal -->
     <button
       type="button"
       class="cardItem d-flex flex-column justify-content-between"
       data-bs-toggle="modal"
-      data-bs-target="#cardModal"
+      :data-bs-target="'#cardModal_' + note.id"
     >
       <div>
         <h1 class="title-card logo">{{ note.title }}</h1>
@@ -17,8 +17,13 @@
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="cardModal" tabindex="11" aria-labelledby="exampleModalLabel">
-      <ModalCard />
+    <div
+      class="modal fade"
+      :id="'cardModal_' + note.id"
+      tabindex="11"
+      aria-labelledby="exampleModalLabel"
+    >
+      <ModalCard :userTitle="note.title" :userDescription="note.description" />
     </div>
   </div>
 </template>
