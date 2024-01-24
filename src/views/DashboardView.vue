@@ -1,6 +1,6 @@
 <script>
 import NavbarDashboard from '../components/NavbarDashboard.vue'
-import CardItem from '../components/CardItem.vue'
+// import CardItem from '../components/CardItem.vue'
 import ModalCard from '../components/ModalCard.vue'
 export default {
   components: {
